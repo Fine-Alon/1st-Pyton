@@ -1,0 +1,168 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2757
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 # MyProfile app\
+\
+SEPARATOR = '------------------------------------------'\
+\
+# user profile\
+user_name = ''                # name\
+user_age = 0                  # \uc0\u1074 \u1086 \u1079 \u1088 \u1072 \u1089 \u1090 \
+user_phone = ''               # phone\
+user_email = ''               # \uc0\u1072 \u1076 \u1088 \u1077 \u1089  \u1101 \u1083 \u1077 \u1082 \u1090 \u1088 \u1086 \u1085 \u1085 \u1086 \u1081  \u1087 \u1086 \u1095 \u1090 \u1099 \
+user_email_index = ''         # \uc0\u1087 \u1086 \u1095 \u1090 \u1086 \u1074 \u1099 \u1081  \u1080 \u1085 \u1076 \u1077 \u1082 \u1089 \
+user_email_address = ''       # \uc0\u1087 \u1086 \u1095 \u1090 \u1086 \u1074 \u1099 \u1081  \u1072 \u1076 \u1088 \u1077 \u1089  (\u1073 \u1077 \u1079  \u1080 \u1085 \u1076 \u1077 \u1082 \u1089 \u1072 )\
+general_user_info = ''        # \uc0\u1076 \u1086 \u1087 \u1086 \u1083 \u1085 \u1080 \u1090 \u1077 \u1083 \u1100 \u1085 \u1091 \u1102  \u1080 \u1085 \u1092 \u1086 \u1088 \u1084 \u1072 \u1094 \u1080 \u1102 \
+\
+# bank info\
+ogrnip = 0                    # \uc0\u1054 \u1043 \u1056 \u1053 \u1048 \u1055 \
+inn = 0                       # \uc0\u1048 \u1053 \u1053 \
+bank_account = 0              # \uc0\u1073 \u1072 \u1085 \u1082  \u1072 \u1082 \u1082 \u1072 \u1091 \u1085 \u1090 \
+bank_name = ''                # \uc0\u1085 \u1072 \u1079 \u1074 \u1072 \u1085 \u1080 \u1077  \u1073 \u1072 \u1085 \u1082 \u1072 \
+bik = 0                       # \uc0\u1041 \u1048 \u1050 \
+correspondent_account = 0     # \uc0\u1082 \u1086 \u1088 \u1088 \u1077 \u1089 \u1087 \u1086 \u1085 \u1076 \u1077 \u1085 \u1090 \u1089 \u1082 \u1080 \u1081  \u1089 \u1095 \u1077 \u1077 \u1090 \
+\
+\
+def general_info_user(name_parameter, age_parameter, phone_parameter, email_parameter, index_parameter, adres_parameter, info_parameter):\
+    print(SEPARATOR)\
+    print('\uc0\u1048 \u1084 \u1103 :    ', name_parameter)\
+    if 11 <= age_parameter % 100 <= 19: years_parameter = '\uc0\u1083 \u1077 \u1090 '\
+    elif age_parameter % 10 == 1: years_parameter = '\uc0\u1075 \u1086 \u1076 '\
+    elif 2 <= age_parameter % 10 <= 4: years_parameter = '\uc0\u1075 \u1086 \u1076 \u1072 '\
+    else: years_parameter = '\uc0\u1083 \u1077 \u1090 '\
+\
+\
+    print('\uc0\u1042 \u1086 \u1079 \u1088 \u1072 \u1089 \u1090 :', age_parameter, years_parameter)\
+    print('\uc0\u1058 \u1077 \u1083 \u1077 \u1092 \u1086 \u1085 :', phone_parameter)\
+    print('E-mail: ', email_parameter)\
+    print('\uc0\u1048 \u1085 \u1076 \u1077 \u1082 \u1089 : ', index_parameter)\
+    print('\uc0\u1040 \u1076 \u1088 \u1077 \u1089 : ', adres_parameter)\
+\
+    if i:\
+        print('')\
+        print('\uc0\u1044 \u1086 \u1087 \u1086 \u1083 \u1085 \u1080 \u1090 \u1077 \u1083 \u1100 \u1085 \u1072 \u1103  \u1080 \u1085 \u1092 \u1086 \u1088 \u1084 \u1072 \u1094 \u1080 \u1103 :')\
+        print(info_parameter)\
+\
+\
+print('\uc0\u1055 \u1088 \u1080 \u1083 \u1086 \u1078 \u1077 \u1085 \u1080 \u1077  MyProfile')\
+print('\uc0\u1057 \u1086 \u1093 \u1088 \u1072 \u1085 \u1103 \u1081  \u1080 \u1085 \u1092 \u1086 \u1088 \u1084 \u1072 \u1094 \u1080 \u1102  \u1086  \u1089 \u1077 \u1073 \u1077  \u1080  \u1074 \u1099 \u1074 \u1086 \u1076 \u1080  \u1077 \u1077  \u1074  \u1088 \u1072 \u1079 \u1085 \u1099 \u1093  \u1092 \u1086 \u1088 \u1084 \u1072 \u1090 \u1072 \u1093 ')\
+\
+while True:\
+    # main menu\
+    print(SEPARATOR)\
+    print('\uc0\u1043 \u1051 \u1040 \u1042 \u1053 \u1054 \u1045  \u1052 \u1045 \u1053 \u1070 ')\
+    print('1 - \uc0\u1042 \u1074 \u1077 \u1089 \u1090 \u1080  \u1080 \u1083 \u1080  \u1086 \u1073 \u1085 \u1086 \u1074 \u1080 \u1090 \u1100  \u1080 \u1085 \u1092 \u1086 \u1088 \u1084 \u1072 \u1094 \u1080 \u1102 ')\
+    print('2 - \uc0\u1042 \u1099 \u1074 \u1077 \u1089 \u1090 \u1080  \u1080 \u1085 \u1092 \u1086 \u1088 \u1084 \u1072 \u1094 \u1080 \u1102 ')\
+    print('0 - \uc0\u1047 \u1072 \u1074 \u1077 \u1088 \u1096 \u1080 \u1090 \u1100  \u1088 \u1072 \u1073 \u1086 \u1090 \u1091 ')\
+\
+    option = int(input('\uc0\u1042 \u1074 \u1077 \u1076 \u1080 \u1090 \u1077  \u1085 \u1086 \u1084 \u1077 \u1088  \u1087 \u1091 \u1085 \u1082 \u1090 \u1072  \u1084 \u1077 \u1085 \u1102 : '))\
+    if option == 0:\
+            break\
+\
+    if option == 1:\
+        # submenu 1: edit info\
+        while True:\
+            print(SEPARATOR)\
+            print('\uc0\u1042 \u1042 \u1045 \u1057 \u1058 \u1048  \u1048 \u1051 \u1048  \u1054 \u1041 \u1053 \u1054 \u1042 \u1048 \u1058 \u1068  \u1048 \u1053 \u1060 \u1054 \u1056 \u1052 \u1040 \u1062 \u1048 \u1070 ')\
+            print('1 - \uc0\u1051 \u1080 \u1095 \u1085 \u1072 \u1103  \u1080 \u1085 \u1092 \u1086 \u1088 \u1084 \u1072 \u1094 \u1080 \u1103 ')\
+            print('2 - \uc0\u1048 \u1085 \u1092 \u1086 \u1088 \u1084 \u1072 \u1094 \u1080 \u1103  \u1086  \u1087 \u1088 \u1077 \u1076 \u1087 \u1088 \u1080 \u1085 \u1080 \u1084 \u1072 \u1090 \u1077 \u1083 \u1077 ')\
+            print('0 - \uc0\u1053 \u1072 \u1079 \u1072 \u1076 ')\
+\
+            option2 = int(input('\uc0\u1042 \u1074 \u1077 \u1076 \u1080 \u1090 \u1077  \u1085 \u1086 \u1084 \u1077 \u1088  \u1087 \u1091 \u1085 \u1082 \u1090 \u1072  \u1084 \u1077 \u1085 \u1102 : '))\
+            if option2 == 0:\
+                break\
+            if option2 == 1:\
+                # input general info\
+                user_name = input('\uc0\u1042 \u1074 \u1077 \u1076 \u1080 \u1090 \u1077  \u1080 \u1084 \u1103 : ')\
+                while 1:\
+                    # validate user age\
+                    user_age = int(input('\uc0\u1042 \u1074 \u1077 \u1076 \u1080 \u1090 \u1077  \u1074 \u1086 \u1079 \u1088 \u1072 \u1089 \u1090 : '))\
+                    if user_age > 0:\
+                        break\
+                    print('\uc0\u1042 \u1086 \u1079 \u1088 \u1072 \u1089 \u1090  \u1076 \u1086 \u1083 \u1078 \u1077 \u1085  \u1073 \u1099 \u1090 \u1100  \u1087 \u1086 \u1083 \u1086 \u1078 \u1080 \u1090 \u1077 \u1083 \u1100 \u1085 \u1099 \u1084 ')\
+                # validate user phone\
+                uphone = input('\uc0\u1042 \u1074 \u1077 \u1076 \u1080 \u1090 \u1077  \u1085 \u1086 \u1084 \u1077 \u1088  \u1090 \u1077 \u1083 \u1077 \u1092 \u1086 \u1085 \u1072  (+7\u1061 \u1061 \u1061 \u1061 \u1061 \u1061 \u1061 \u1061 \u1061 \u1061 ): ')\
+                user_phone = ''\
+                for ch in uphone:\
+                    if ch == '+' or ('0' <= ch <= '9'):\
+                        user_phone += ch\
+\
+                user_email = input('\uc0\u1042 \u1074 \u1077 \u1076 \u1080 \u1090 \u1077  \u1072 \u1076 \u1088 \u1077 \u1089  \u1101 \u1083 \u1077 \u1082 \u1090 \u1088 \u1086 \u1085 \u1085 \u1086 \u1081  \u1087 \u1086 \u1095 \u1090 \u1099 : ')  \
+                # validate user index\
+                index = input('\uc0\u1042 \u1074 \u1077 \u1076 \u1080 \u1090 \u1077  \u1087 \u1086 \u1095 \u1090 \u1086 \u1074 \u1099 \u1081  \u1080 \u1085 \u1076 \u1077 \u1082 \u1089 : ')\
+                user_email_index= ''\
+                for ch in index:\
+                    if '0' <= ch <= '9':\
+                        user_email_index += ch\
+                user_email_address = input('\uc0\u1042 \u1074 \u1077 \u1076 \u1080 \u1090 \u1077  \u1087 \u1086 \u1095 \u1090 \u1086 \u1074 \u1099 \u1081  \u1072 \u1076 \u1088 \u1077 \u1089  (\u1073 \u1077 \u1079  \u1080 \u1085 \u1076 \u1077 \u1082 \u1089 \u1072 ): ')\
+                general_user_info = input('\uc0\u1042 \u1074 \u1077 \u1076 \u1080 \u1090 \u1077  \u1076 \u1086 \u1087 \u1086 \u1083 \u1085 \u1080 \u1090 \u1077 \u1083 \u1100 \u1085 \u1091 \u1102  \u1080 \u1085 \u1092 \u1086 \u1088 \u1084 \u1072 \u1094 \u1080 \u1102 :\\n')\
+\
+            elif option2 == 2:\
+                # input bank info\
+                ogrnip = int(input('\uc0\u1042 \u1074 \u1077 \u1076 \u1080 \u1090 \u1077  \u1054 \u1043 \u1056 \u1053 \u1048 \u1055 : '))\
+                while True:\
+                    temp_ogrnip = ogrnip\
+                    o_counter = 0\
+                    while temp_ogrnip:\
+                        o_counter += 1\
+                        temp_ogrnip //= 10\
+                    if o_counter == 15:\
+                        break\
+                    else:\
+                        print('\\n\uc0\u1054 \u1043 \u1056 \u1053 \u1048 \u1055  \u1076 \u1086 \u1083 \u1078 \u1077 \u1085  \u1089 \u1086 \u1076 \u1077 \u1088 \u1078 \u1072 \u1090 \u1100  15 \u1094 \u1080 \u1092 \u1088 ')\
+                        ogrnip = int(input('\uc0\u1042 \u1074 \u1077 \u1076 \u1080 \u1090 \u1077  \u1054 \u1043 \u1056 \u1053 \u1048 \u1055 : '))\
+                        \
+                inn = int(input('\uc0\u1042 \u1074 \u1077 \u1076 \u1080 \u1090 \u1077  \u1048 \u1053 \u1053 : '))\
+                \
+                bank_account = int(input('\uc0\u1042 \u1074 \u1077 \u1076 \u1080 \u1090 \u1077  \u1088 \u1072 \u1089 \u1095 \u1077 \u1090 \u1085 \u1099 \u1081  \u1089 \u1095 \u1077 \u1090 : '))\
+                while True:\
+                    temp_bank_account = bank_account\
+                    ba_counter = 0\
+                    while temp_bank_account:\
+                        ba_counter += 1\
+                        temp_bank_account //= 10\
+                    if ba_counter == 20:\
+                        break\
+                    else:\
+                        print('\\n\uc0\u1088 \u1072 \u1089 \u1095 \u1077 \u1090 \u1085 \u1099 \u1081  \u1089 \u1095 \u1077 \u1090  \u1076 \u1086 \u1083 \u1078 \u1077 \u1085  \u1089 \u1086 \u1076 \u1077 \u1088 \u1078 \u1072 \u1090 \u1100  20 \u1094 \u1080 \u1092 \u1088 ')\
+                        bank_account = int(input('\uc0\u1042 \u1074 \u1077 \u1076 \u1080 \u1090 \u1077  \u1088 \u1072 \u1089 \u1095 \u1077 \u1090 \u1085 \u1099 \u1081  \u1089 \u1095 \u1077 \u1090 : '))                      \
+                bank_name = input('\uc0\u1042 \u1074 \u1077 \u1076 \u1080 \u1090 \u1077  \u1085 \u1072 \u1079 \u1074 \u1072 \u1085 \u1080 \u1077  \u1073 \u1072 \u1085 \u1082 \u1072 : ')\
+                bik = int(input('\uc0\u1042 \u1074 \u1077 \u1076 \u1080 \u1090 \u1077  \u1041 \u1048 \u1050 : '))\
+                correspondent_account = int(input('\uc0\u1042 \u1074 \u1077 \u1076 \u1080 \u1090 \u1077  \u1082 \u1086 \u1088 \u1088 \u1077 \u1089 \u1087 \u1086 \u1085 \u1076 \u1077 \u1085 \u1090 \u1089 \u1082 \u1080 \u1081  \u1089 \u1095 \u1077 \u1077 \u1090 : '))\
+\
+\
+            else: print('\uc0\u1042 \u1074 \u1077 \u1076 \u1080 \u1090 \u1077  \u1082 \u1086 \u1088 \u1088 \u1077 \u1082 \u1090 \u1085 \u1099 \u1081  \u1087 \u1091 \u1085 \u1082 \u1090  \u1084 \u1077 \u1085 \u1102 ')\
+    elif option == 2:\
+        # submenu 2: print info\
+        while True:\
+            print(SEPARATOR)\
+            print('\uc0\u1042 \u1067 \u1042 \u1045 \u1057 \u1058 \u1048  \u1048 \u1053 \u1060 \u1054 \u1056 \u1052 \u1040 \u1062 \u1048 \u1070 ')\
+            print('1 - \uc0\u1054 \u1073 \u1097 \u1072 \u1103  \u1080 \u1085 \u1092 \u1086 \u1088 \u1084 \u1072 \u1094 \u1080 \u1103 ')\
+            print('2 - \uc0\u1042 \u1089 \u1103  \u1080 \u1085 \u1092 \u1086 \u1088 \u1084 \u1072 \u1094 \u1080 \u1103 ')\
+            print('0 - \uc0\u1053 \u1072 \u1079 \u1072 \u1076 ')\
+\
+            option2 = int(input('\uc0\u1042 \u1074 \u1077 \u1076 \u1080 \u1090 \u1077  \u1085 \u1086 \u1084 \u1077 \u1088  \u1087 \u1091 \u1085 \u1082 \u1090 \u1072  \u1084 \u1077 \u1085 \u1102 : '))\
+            if option2 == 0:\
+                break\
+            if option2 == 1:\
+                general_info_user(user_name, user_age, user_phone, user_email, user_email_index, user_email_address, general_user_info)\
+\
+            elif option2 == 2:\
+                general_info_user(user_name, user_age, user_phone, user_email, user_email_index, user_email_address, general_user_info)\
+\
+                # print bank data\
+                print('\\n\uc0\u1080 \u1085 \u1092 \u1086 \u1088 \u1084 \u1072 \u1094 \u1080 \u1103  \u1086  \u1087 \u1088 \u1077 \u1076 \u1087 \u1088 \u1080 \u1085 \u1080 \u1084 \u1072 \u1090 \u1077 \u1083 \u1077 ')\
+                print('\uc0\u1054 \u1043 \u1056 \u1053 \u1048 \u1055 :', ogrnip)\
+                print('\uc0\u1048 \u1053 \u1053 : ', inn)\
+                print('\uc0\u1073 \u1072 \u1085 \u1082 \u1086 \u1074 \u1089 \u1082 \u1080 \u1077  \u1088 \u1077 \u1082 \u1074 \u1080 \u1079 \u1080 \u1090 \u1099 ')\
+                print('\uc0\u1056 /\u1089 :   ', bank_account)\
+                print('\uc0\u1041 \u1072 \u1085 \u1082 :   ', bank_name)\
+                print('\uc0\u1041 \u1048 \u1050 :   ', bik)\
+                print('\uc0\u1050 /\u1089 :   ', correspondent_account)\
+\
+            else:   print('\uc0\u1042 \u1074 \u1077 \u1076 \u1080 \u1090 \u1077  \u1082 \u1086 \u1088 \u1088 \u1077 \u1082 \u1090 \u1085 \u1099 \u1081  \u1087 \u1091 \u1085 \u1082 \u1090  \u1084 \u1077 \u1085 \u1102 ')\
+    else:       print('\uc0\u1042 \u1074 \u1077 \u1076 \u1080 \u1090 \u1077  \u1082 \u1086 \u1088 \u1088 \u1077 \u1082 \u1090 \u1085 \u1099 \u1081  \u1087 \u1091 \u1085 \u1082 \u1090  \u1084 \u1077 \u1085 \u1102 ')}
